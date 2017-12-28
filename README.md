@@ -9,7 +9,7 @@
 ### CocoaPods： 
 #### 导入项目中的方法：
  ```
- pod 'SBLayout', '~>4.0'
+ pod 'SBLayout', '~>4.2'
 ```
 #### 或者直接拖拽SBLayout.swift到项目中即可使用。
 
