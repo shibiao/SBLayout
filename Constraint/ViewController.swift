@@ -15,6 +15,7 @@ class ViewController: UIViewController {
         let redView = UIView()
         redView.backgroundColor = .red  
         self.view.addSubview(redView)
+        //使用SBLayout约束
         redView.height(100).width(200).centerX(equalTo: view.centerX).top(equalTo: view.top, constant: 100).end()
         
     }

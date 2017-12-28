@@ -447,324 +447,324 @@ extension UIView {
         constraint.active()
     }
     //MARK:NSLayoutConstraint赋值一个固定数值
-    open func setWidth(_ width: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setWidth(_ width: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: widthAnchor.constraint(equalToConstant: width), with: priority)
         return self
     }
-    open func setHeight(_ height: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setHeight(_ height: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: heightAnchor.constraint(equalToConstant: height), with: priority)
         return self
     }
     //MARK:NSLayoutConstraint约束一个Anchor
-    open func setWidth(equalTo aAnchor: NSLayoutDimension, with priority: UILayoutPriority) -> UIView {
+    open func setWidth(equalTo aAnchor: NSLayoutDimension, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: widthAnchor.constraint(equalTo: aAnchor), with: priority)
         return self
     }
-    open func setHeight(equalTo aAnchor: NSLayoutDimension, with priority: UILayoutPriority) -> UIView {
+    open func setHeight(equalTo aAnchor: NSLayoutDimension, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: heightAnchor.constraint(equalTo: aAnchor), with: priority)
         return self
     }
-    open func setTop(equalTo aAnchor: NSLayoutYAxisAnchor, with priority: UILayoutPriority) -> UIView {
+    open func setTop(equalTo aAnchor: NSLayoutYAxisAnchor, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: topAnchor.constraint(equalTo: aAnchor), with: priority)
         return self
     }
-    open func setBottom(equalTo aAnchor: NSLayoutYAxisAnchor, with priority: UILayoutPriority) -> UIView {
+    open func setBottom(equalTo aAnchor: NSLayoutYAxisAnchor, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: bottomAnchor.constraint(equalTo: aAnchor), with: priority)
         return self
     }
-    open func setLeft(equalTo aAnchor: NSLayoutXAxisAnchor, with priority: UILayoutPriority) -> UIView {
+    open func setLeft(equalTo aAnchor: NSLayoutXAxisAnchor, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: leftAnchor.constraint(equalTo: aAnchor), with: priority)
         return self
     }
-    open func setRight(equalTo aAnchor: NSLayoutXAxisAnchor, with priority: UILayoutPriority) -> UIView {
+    open func setRight(equalTo aAnchor: NSLayoutXAxisAnchor, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: rightAnchor.constraint(equalTo: aAnchor), with: priority)
         return self
     }
-    open func setLeading(equalTo aAnchor: NSLayoutXAxisAnchor, with priority: UILayoutPriority) -> UIView {
+    open func setLeading(equalTo aAnchor: NSLayoutXAxisAnchor, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: leadingAnchor.constraint(equalTo: aAnchor), with: priority)
         return self
     }
-    open func setTrailing(equalTo aAnchor: NSLayoutXAxisAnchor, with priority: UILayoutPriority) -> UIView {
+    open func setTrailing(equalTo aAnchor: NSLayoutXAxisAnchor, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: trailingAnchor.constraint(equalTo: aAnchor), with: priority)
         return self
     }
-    open func setCenterX(equalTo aAnchor: NSLayoutXAxisAnchor, with priority: UILayoutPriority) -> UIView {
+    open func setCenterX(equalTo aAnchor: NSLayoutXAxisAnchor, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: centerXAnchor.constraint(equalTo: aAnchor), with: priority)
         return self
     }
-    open func setCenterY(equalTo aAnchor: NSLayoutYAxisAnchor, with priority: UILayoutPriority) -> UIView {
+    open func setCenterY(equalTo aAnchor: NSLayoutYAxisAnchor, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: centerYAnchor.constraint(equalTo: aAnchor), with: priority)
         return self
     }
-    open func setFirstBaseline(equalTo aAnchor: NSLayoutYAxisAnchor, with priority: UILayoutPriority) -> UIView {
+    open func setFirstBaseline(equalTo aAnchor: NSLayoutYAxisAnchor, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: firstBaselineAnchor.constraint(equalTo: aAnchor), with: priority)
         return self
     }
-    open func setLastBaseline(equalTo aAnchor: NSLayoutYAxisAnchor, with priority: UILayoutPriority) -> UIView {
+    open func setLastBaseline(equalTo aAnchor: NSLayoutYAxisAnchor, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: lastBaselineAnchor.constraint(equalTo: aAnchor), with: priority)
         return self
     }
     //MARK: NSLayoutConstraint约束一个Anchor和constant
-    open func setWidth(equalTo aAnchor: NSLayoutDimension, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setWidth(equalTo aAnchor: NSLayoutDimension, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: widthAnchor.constraint(equalTo: aAnchor, constant: constant), with: priority)
         return self
     }
-    open func setHeight(equalTo aAnchor: NSLayoutDimension, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setHeight(equalTo aAnchor: NSLayoutDimension, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: heightAnchor.constraint(equalTo: aAnchor, constant: constant), with: priority)
         return self
     }
-    open func setTop(equalTo aAnchor: NSLayoutYAxisAnchor, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setTop(equalTo aAnchor: NSLayoutYAxisAnchor, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: topAnchor.constraint(equalTo: aAnchor, constant: constant), with: priority)
         return self
     }
-    open func setBottom(equalTo aAnchor: NSLayoutYAxisAnchor, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setBottom(equalTo aAnchor: NSLayoutYAxisAnchor, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: bottomAnchor.constraint(equalTo: aAnchor, constant: constant), with: priority)
         return self
     }
-    open func setLeft(equalTo aAnchor: NSLayoutXAxisAnchor, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setLeft(equalTo aAnchor: NSLayoutXAxisAnchor, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: leftAnchor.constraint(equalTo: aAnchor, constant: constant), with: priority)
         return self
     }
-    open func setRight(equalTo aAnchor: NSLayoutXAxisAnchor, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setRight(equalTo aAnchor: NSLayoutXAxisAnchor, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: rightAnchor.constraint(equalTo: aAnchor, constant: constant), with: priority)
         return self
     }
-    open func setLeading(equalTo aAnchor: NSLayoutXAxisAnchor, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setLeading(equalTo aAnchor: NSLayoutXAxisAnchor, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: leadingAnchor.constraint(equalTo: aAnchor, constant: constant), with: priority)
         return self
     }
-    open func setTrailing(equalTo aAnchor: NSLayoutXAxisAnchor, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setTrailing(equalTo aAnchor: NSLayoutXAxisAnchor, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: trailingAnchor.constraint(equalTo: aAnchor, constant: constant), with: priority)
         return self
     }
-    open func setCenterX(equalTo aAnchor: NSLayoutXAxisAnchor, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setCenterX(equalTo aAnchor: NSLayoutXAxisAnchor, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: centerXAnchor.constraint(equalTo: aAnchor, constant: constant), with: priority)
         return self
     }
-    open func setCenterY(equalTo aAnchor: NSLayoutYAxisAnchor, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setCenterY(equalTo aAnchor: NSLayoutYAxisAnchor, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: centerYAnchor.constraint(equalTo: aAnchor, constant: constant), with: priority)
         return self
     }
-    open func setFirstBaseline(equalTo aAnchor: NSLayoutYAxisAnchor, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setFirstBaseline(equalTo aAnchor: NSLayoutYAxisAnchor, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: firstBaselineAnchor.constraint(equalTo: aAnchor, constant: constant), with: priority)
         return self
     }
-    open func setLastBaseline(equalTo aAnchor: NSLayoutYAxisAnchor, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setLastBaseline(equalTo aAnchor: NSLayoutYAxisAnchor, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: lastBaselineAnchor.constraint(equalTo: aAnchor, constant: constant), with: priority)
         return self
     }
     //MARK: NSLayoutConstraint lessThanOrEqualTo
-    open func setWidth(lessThanOrEqualTo aAnchor: NSLayoutDimension, with priority: UILayoutPriority) -> UIView {
+    open func setWidth(lessThanOrEqualTo aAnchor: NSLayoutDimension, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: widthAnchor.constraint(lessThanOrEqualTo: aAnchor), with: priority)
         return self
     }
-    open func setHeight(lessThanOrEqualTo aAnchor: NSLayoutDimension, with priority: UILayoutPriority) -> UIView {
+    open func setHeight(lessThanOrEqualTo aAnchor: NSLayoutDimension, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: heightAnchor.constraint(lessThanOrEqualTo: aAnchor), with: priority)
         return self
     }
-    open func setTop(lessThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, with priority: UILayoutPriority) -> UIView {
+    open func setTop(lessThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: topAnchor.constraint(lessThanOrEqualTo: aAnchor), with: priority)
         return self
     }
-    open func setBottom(lessThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, with priority: UILayoutPriority) -> UIView {
+    open func setBottom(lessThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: bottomAnchor.constraint(lessThanOrEqualTo: aAnchor), with: priority)
         return self
     }
-    open func setLeft(lessThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, with priority: UILayoutPriority) -> UIView {
+    open func setLeft(lessThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: leftAnchor.constraint(lessThanOrEqualTo: aAnchor), with: priority)
         return self
     }
-    open func setRight(lessThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, with priority: UILayoutPriority) -> UIView {
+    open func setRight(lessThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: rightAnchor.constraint(lessThanOrEqualTo: aAnchor), with: priority)
         return self
     }
-    open func setLeading(lessThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, with priority: UILayoutPriority) -> UIView {
+    open func setLeading(lessThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: leadingAnchor.constraint(lessThanOrEqualTo: aAnchor), with: priority)
         return self
     }
-    open func setTrailing(lessThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, with priority: UILayoutPriority) -> UIView {
+    open func setTrailing(lessThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: trailingAnchor.constraint(lessThanOrEqualTo: aAnchor), with: priority)
         return self
     }
-    open func setCenterX(lessThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, with priority: UILayoutPriority) -> UIView {
+    open func setCenterX(lessThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: centerXAnchor.constraint(lessThanOrEqualTo: aAnchor), with: priority)
         return self
     }
-    open func setCenterY(lessThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, with priority: UILayoutPriority) -> UIView {
+    open func setCenterY(lessThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: centerYAnchor.constraint(lessThanOrEqualTo: aAnchor), with: priority)
         return self
     }
-    open func setFirstBaseline(lessThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, with priority: UILayoutPriority) -> UIView {
+    open func setFirstBaseline(lessThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: firstBaselineAnchor.constraint(lessThanOrEqualTo: aAnchor), with: priority)
         return self
     }
-    open func setLastBaseline(lessThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, with priority: UILayoutPriority) -> UIView {
+    open func setLastBaseline(lessThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: lastBaselineAnchor.constraint(lessThanOrEqualTo: aAnchor), with: priority)
         return self
     }
     //MARK: NSLayoutConstraint lessThanOrEqualTo 和 constant
-    open func setWidth(lessThanOrEqualTo aAnchor: NSLayoutDimension, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setWidth(lessThanOrEqualTo aAnchor: NSLayoutDimension, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: widthAnchor.constraint(lessThanOrEqualTo: aAnchor, constant: constant), with: priority)
         return self
     }
-    open func setHeight(lessThanOrEqualTo aAnchor: NSLayoutDimension, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setHeight(lessThanOrEqualTo aAnchor: NSLayoutDimension, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: heightAnchor.constraint(lessThanOrEqualTo: aAnchor, constant: constant), with: priority)
         return self
     }
-    open func setTop(lessThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setTop(lessThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: topAnchor.constraint(lessThanOrEqualTo: aAnchor, constant: constant), with: priority)
         return self
     }
-    open func setBottom(lessThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setBottom(lessThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: bottomAnchor.constraint(lessThanOrEqualTo: aAnchor, constant: constant), with: priority)
         return self
     }
-    open func setLeft(lessThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setLeft(lessThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: leftAnchor.constraint(lessThanOrEqualTo: aAnchor, constant: constant), with: priority)
         return self
     }
-    open func setRight(lessThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setRight(lessThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: rightAnchor.constraint(lessThanOrEqualTo: aAnchor, constant: constant), with: priority)
         return self
     }
-    open func setLeading(lessThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setLeading(lessThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: leadingAnchor.constraint(lessThanOrEqualTo: aAnchor, constant: constant), with: priority)
         return self
     }
-    open func setTrailing(lessThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setTrailing(lessThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: trailingAnchor.constraint(lessThanOrEqualTo: aAnchor, constant: constant), with: priority)
         return self
     }
-    open func setCenterX(lessThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setCenterX(lessThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: centerXAnchor.constraint(lessThanOrEqualTo: aAnchor, constant: constant), with: priority)
         return self
     }
-    open func setCenterY(lessThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setCenterY(lessThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: centerYAnchor.constraint(lessThanOrEqualTo: aAnchor, constant: constant), with: priority)
         return self
     }
-    open func setFirstBaseline(lessThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setFirstBaseline(lessThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: firstBaselineAnchor.constraint(lessThanOrEqualTo: aAnchor, constant: constant), with: priority)
         return self
     }
-    open func setLastBaseline(lessThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setLastBaseline(lessThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: lastBaselineAnchor.constraint(lessThanOrEqualTo: aAnchor, constant: constant), with: priority)
         return self
     }
     
     //MARK: NSLayoutConstraint greaterThanOrEqualTo
-    open func setWidth(greaterThanOrEqualTo aAnchor: NSLayoutDimension, with priority: UILayoutPriority) -> UIView {
+    open func setWidth(greaterThanOrEqualTo aAnchor: NSLayoutDimension, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: widthAnchor.constraint(greaterThanOrEqualTo: aAnchor), with: priority)
         return self
     }
-    open func setHeight(greaterThanOrEqualTo aAnchor: NSLayoutDimension, with priority: UILayoutPriority) -> UIView {
+    open func setHeight(greaterThanOrEqualTo aAnchor: NSLayoutDimension, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: heightAnchor.constraint(greaterThanOrEqualTo: aAnchor), with: priority)
         return self
     }
-    open func setTop(greaterThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, with priority: UILayoutPriority) -> UIView {
+    open func setTop(greaterThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: topAnchor.constraint(greaterThanOrEqualTo: aAnchor), with: priority)
         return self
     }
-    open func setBottom(greaterThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, with priority: UILayoutPriority) -> UIView {
+    open func setBottom(greaterThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: bottomAnchor.constraint(greaterThanOrEqualTo: aAnchor), with: priority)
         return self
     }
-    open func setLeft(greaterThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, with priority: UILayoutPriority) -> UIView {
+    open func setLeft(greaterThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: leftAnchor.constraint(greaterThanOrEqualTo: aAnchor), with: priority)
         return self
     }
-    open func setRight(greaterThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, with priority: UILayoutPriority) -> UIView {
+    open func setRight(greaterThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: rightAnchor.constraint(greaterThanOrEqualTo: aAnchor), with: priority)
         return self
     }
-    open func setLeading(greaterThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, with priority: UILayoutPriority) -> UIView {
+    open func setLeading(greaterThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: leadingAnchor.constraint(greaterThanOrEqualTo: aAnchor), with: priority)
         return self
     }
-    open func setTrailing(greaterThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, with priority: UILayoutPriority) -> UIView {
+    open func setTrailing(greaterThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: trailingAnchor.constraint(greaterThanOrEqualTo: aAnchor), with: priority)
         return self
     }
-    open func setCenterX(greaterThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, with priority: UILayoutPriority) -> UIView {
+    open func setCenterX(greaterThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: centerXAnchor.constraint(greaterThanOrEqualTo: aAnchor), with: priority)
         return self
     }
-    open func setCenterY(greaterThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, with priority: UILayoutPriority) -> UIView {
+    open func setCenterY(greaterThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: centerYAnchor.constraint(greaterThanOrEqualTo: aAnchor), with: priority)
         return self
     }
-    open func setFirstBaseline(greaterThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, with priority: UILayoutPriority) -> UIView {
+    open func setFirstBaseline(greaterThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: firstBaselineAnchor.constraint(greaterThanOrEqualTo: aAnchor), with: priority)
         return self
     }
-    open func setLastBaseline(greaterThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, with priority: UILayoutPriority) -> UIView {
+    open func setLastBaseline(greaterThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: lastBaselineAnchor.constraint(greaterThanOrEqualTo: aAnchor), with: priority)
         return self
     }
     //MARK: NSLayoutConstraint lessThanOrEqualTo 和 constant
-    open func setWidth(greaterThanOrEqualTo aAnchor: NSLayoutDimension, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setWidth(greaterThanOrEqualTo aAnchor: NSLayoutDimension, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: widthAnchor.constraint(greaterThanOrEqualTo: aAnchor, constant: constant), with: priority)
         return self
     }
-    open func setHeight(greaterThanOrEqualTo aAnchor: NSLayoutDimension, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setHeight(greaterThanOrEqualTo aAnchor: NSLayoutDimension, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: heightAnchor.constraint(greaterThanOrEqualTo: aAnchor, constant: constant), with: priority)
         return self
     }
-    open func setTop(greaterThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setTop(greaterThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: topAnchor.constraint(greaterThanOrEqualTo: aAnchor, constant: constant), with: priority)
         return self
     }
-    open func setBottom(greaterThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setBottom(greaterThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: bottomAnchor.constraint(greaterThanOrEqualTo: aAnchor, constant: constant), with: priority)
         return self
     }
-    open func setLeft(greaterThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setLeft(greaterThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: leftAnchor.constraint(greaterThanOrEqualTo: aAnchor, constant: constant), with: priority)
         return self
     }
-    open func setRight(greaterThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setRight(greaterThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: rightAnchor.constraint(greaterThanOrEqualTo: aAnchor, constant: constant), with: priority)
         return self
     }
-    open func setLeading(greaterThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setLeading(greaterThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: leadingAnchor.constraint(greaterThanOrEqualTo: aAnchor, constant: constant), with: priority)
         return self
     }
-    open func setTrailing(greaterThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setTrailing(greaterThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: trailingAnchor.constraint(greaterThanOrEqualTo: aAnchor, constant: constant), with: priority)
         return self
     }
-    open func setCenterX(greaterThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setCenterX(greaterThanOrEqualTo aAnchor: NSLayoutXAxisAnchor, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: centerXAnchor.constraint(greaterThanOrEqualTo: aAnchor, constant: constant), with: priority)
         return self
     }
-    open func setCenterY(greaterThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setCenterY(greaterThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: centerYAnchor.constraint(greaterThanOrEqualTo: aAnchor, constant: constant), with: priority)
         return self
     }
-    open func setFirstBaseline(greaterThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setFirstBaseline(greaterThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: firstBaselineAnchor.constraint(greaterThanOrEqualTo: aAnchor, constant: constant), with: priority)
         return self
     }
-    open func setLastBaseline(greaterThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setLastBaseline(greaterThanOrEqualTo aAnchor: NSLayoutYAxisAnchor, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: lastBaselineAnchor.constraint(greaterThanOrEqualTo: aAnchor, constant: constant), with: priority)
         return self
     }
     //MARK: NSLayoutConstraint width 和 height 约束的倍数
-    open func setWidth(equalTo aAnchor: NSLayoutDimension, multiplier: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setWidth(equalTo aAnchor: NSLayoutDimension, multiplier: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: widthAnchor.constraint(equalTo: aAnchor, multiplier: multiplier), with: priority)
         return self
     }
-    open func setHeight(equalTo aAnchor: NSLayoutDimension, multiplier: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setHeight(equalTo aAnchor: NSLayoutDimension, multiplier: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: heightAnchor.constraint(equalTo: aAnchor, multiplier: multiplier), with: priority)
         return self
     }
     //MARK: NSLayoutConstraint width 和 height 约束的倍数 以及常量
-    open func setWidth(equalTo aAnchor: NSLayoutDimension, multiplier: CGFloat, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setWidth(equalTo aAnchor: NSLayoutDimension, multiplier: CGFloat, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: widthAnchor.constraint(equalTo: aAnchor, multiplier: multiplier, constant: constant), with: priority)
         return self
     }
-    open func setHeight(equalTo aAnchor: NSLayoutDimension, multiplier: CGFloat, constant: CGFloat, with priority: UILayoutPriority) -> UIView {
+    open func setHeight(equalTo aAnchor: NSLayoutDimension, multiplier: CGFloat, constant: CGFloat, priority: UILayoutPriority) -> UIView {
         setLayout(constraint: heightAnchor.constraint(equalTo: aAnchor, multiplier: multiplier, constant: constant), with: priority)
         return self
     }
