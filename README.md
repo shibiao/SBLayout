@@ -19,6 +19,7 @@ let redView = UIView()
 redView.backgroundColor = .red  
 self.view.addSubview(redView)
 //使用SBLayout约束
-redView.height(100).width(200).centerX(equalTo: view.centerX).top(equalTo: view.top, constant: 100).end()
+//默认的优先级是最高的，set开头可以设置优先级
+redView.height(100).width(200).centerX(equalTo: view.centerX).top(equalTo: view.top, constant: 100).setWidth(400, priority: .defaultLow).end()
 
 ```
