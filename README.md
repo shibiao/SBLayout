@@ -12,7 +12,11 @@
  pod 'SBLayout', '~>4.2'
 ```
 #### 或者直接拖拽SBLayout.swift到项目中即可使用。
+
+
 ![1](https://github.com/shibiao/SBLayout/blob/master/QQ20171228-114204.png)
+
+
 #### 实例：
 ```
 let redView = UIView()
