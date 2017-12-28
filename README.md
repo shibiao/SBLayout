@@ -7,11 +7,7 @@
 ### CocoaPods： 
 #### 导入项目中的方法：
  ```
-use_frameworks!
-
-target 'YourAppTargetName' do
-    pod 'SBLayout', '~>4.0'
-end
+ pod 'SBLayout', '~>4.0'
 ```
 #### 或者直接拖拽SBLayout.swift到项目中即可使用。
 
