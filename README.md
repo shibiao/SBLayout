@@ -1,6 +1,6 @@
 # SBLayout
-##### AutoLayout for iOS by swift
-##### SBLayout是iOS版本轻量级AutoLayout约束框架，单文件，总共代码不足800行，非常简单易用！
+> ### AutoLayout for iOS by swift
+### SBLayout是iOS版本轻量级AutoLayout约束框架，单文件，总共代码不足800行，非常简单易用！
 
 ### 使用SBLayout你可以一行搞定无论多复杂的代码约束
 ***
