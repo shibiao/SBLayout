@@ -8,7 +8,7 @@
 
 ### CocoaPods： 
 #### 导入项目中的方法：
-第一步：
+第一步：Podfile中添加
 
 `pod 'SBLayout', '~>4.3'`
  
