@@ -9,9 +9,9 @@
 ### CocoaPods： 
 #### 导入项目中的方法：
 第一步：
- ```
+ `
  pod 'SBLayout', '~>4.3'
-```
+`
 第二步：
 `import SBLayout`
 
