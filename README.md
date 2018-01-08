@@ -1,7 +1,7 @@
 # SBLayout
 > ### AutoLayout for iOS by swift，support iOS9 and above
 
-> ### SBLayout是用Swift4所写的iOS版本轻量级AutoLayout单文件框架，总共代码不足800行，非常简单易用！
+> ### SBLayout是用Swift4所写的iOS版本轻量级AutoLayout单文件框架，总代码700多行，非常简单易用！
 > ##### 支持iOS9及其以上版本
 
 ### 使用SBLayout你可以一行代码搞定无论多复杂的代码约束
