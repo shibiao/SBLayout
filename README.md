@@ -8,10 +8,12 @@
 
 ### CocoaPods： 
 #### 导入项目中的方法：
+第一步：
  ```
  pod 'SBLayout', '~>4.3'
 ```
-然后`import SBLayout`
+第二步：
+`import SBLayout`
 
 #### 或者直接拖拽SBLayout.swift到项目中不需导入头文件即可使用。
 
