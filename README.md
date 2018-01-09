@@ -11,6 +11,8 @@
 第一步：Podfile中添加
 
 `pod 'SBLayout', '~>4.3'`
+
+并使用命令pod install完成导入
  
 第二步：
 
