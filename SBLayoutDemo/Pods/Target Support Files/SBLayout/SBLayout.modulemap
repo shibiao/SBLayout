@@ -1,0 +1,6 @@
+framework module SBLayout {
+  umbrella header "SBLayout-umbrella.h"
+
+  export *
+  module * { export * }
+}
