@@ -13,29 +13,29 @@ extension UIView {
     open func end() {}
     open func sb() {}
     //约束点属性
-    var width: NSLayoutDimension  { get {return widthAnchor} }
+    open var sb_width: NSLayoutDimension  { get {return widthAnchor} }
     
-    var height: NSLayoutDimension  { get {return heightAnchor} }
+    open var sb_height: NSLayoutDimension  { get {return heightAnchor} }
     
-    var top: NSLayoutYAxisAnchor { get {return topAnchor} }
+    open var sb_top: NSLayoutYAxisAnchor { get {return topAnchor} }
     
-    var bottom: NSLayoutYAxisAnchor { get {return bottomAnchor} }
+    open var sb_bottom: NSLayoutYAxisAnchor { get {return bottomAnchor} }
     
-    var right: NSLayoutXAxisAnchor { get {return rightAnchor} }
+    open var sb_right: NSLayoutXAxisAnchor { get {return rightAnchor} }
     
-    var left: NSLayoutXAxisAnchor { get {return leftAnchor} }
+    open var sb_left: NSLayoutXAxisAnchor { get {return leftAnchor} }
     
-    var centerX: NSLayoutXAxisAnchor { get {return centerXAnchor} }
+    open var sb_centerX: NSLayoutXAxisAnchor { get {return centerXAnchor} }
     
-    var centerY: NSLayoutYAxisAnchor { get {return centerYAnchor} }
+    open var sb_centerY: NSLayoutYAxisAnchor { get {return centerYAnchor} }
     
-    var leading: NSLayoutXAxisAnchor { get {return leadingAnchor} }
+    open var sb_leading: NSLayoutXAxisAnchor { get {return leadingAnchor} }
     
-    var trailing: NSLayoutXAxisAnchor { get {return trailingAnchor} }
+    open var sb_trailing: NSLayoutXAxisAnchor { get {return trailingAnchor} }
     
-    var firstBaseline: NSLayoutYAxisAnchor { get {return firstBaselineAnchor} }
+    open var sb_firstBaseline: NSLayoutYAxisAnchor { get {return firstBaselineAnchor} }
     
-    var lastBaseline: NSLayoutYAxisAnchor { get {return lastBaselineAnchor} }
+    open var sb_lastBaseline: NSLayoutYAxisAnchor { get {return lastBaselineAnchor} }
     //MARK: **********************************************************************************************
     //MARK: ****************************************UIView************************************************
     //MARK: 赋值一个固定数值

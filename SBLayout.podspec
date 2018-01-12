@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = 'SBLayout'
-    s.version      = '4.3'
+    s.version      = '4.4'
     s.summary      = 'AutoLayout by swift version'
     s.homepage     = 'https://github.com/shibiao/SBLayout'
     s.license      = 'MIT'
