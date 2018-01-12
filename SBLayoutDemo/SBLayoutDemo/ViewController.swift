@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         return button
     }()
     @objc func handleButtonClick(_ button: UIButton) {
-        //解除约束激活
+        //重新约束前需解除之前的约束   解除约束激活
         NSLayoutConstraint.deactivate(self.redView.constraints)
         //重新约束
         self.redView.top(equalTo: self.view.sb_top, constant: 40).left(equalTo: self.view.sb_left, constant: 20).right(equalTo: self.view.sb_right, constant: -20).height(350).sb()
