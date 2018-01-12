@@ -52,7 +52,7 @@ class ViewController: UIViewController {
         view.addSubview(redView)
         //使用SBLayout约束。结束语用sb()或者end()
         redView.top(equalTo: view.sb_top, constant: 40).left(equalTo: view.sb_left, constant: 20).right(equalTo: view.sb_right, constant: -20).height(200).sb()
-        //set开头还可以设置优先级，默认的优先级最高(defaultLow < defaultHigh < required)
+        //set开头还可以设置优先级，默认的优先级最高(优先级的大小关系：defaultLow < defaultHigh < required)
         view.addSubview(yellowView)
         yellowView.left(equalTo: view.sb_left, constant: 20).top(equalTo: redView.sb_bottom, constant: 40).setTop(equalTo: view.sb_top, priority: .defaultLow).width(100).height(100).end()
         
