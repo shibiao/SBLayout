@@ -13,6 +13,7 @@ struct AutoHeightCellModel {
     var imageName: String
     //文字
     var contentString: String
+    
     init(imageName: String, contentString: String) {
         self.imageName = imageName
         self.contentString = contentString
