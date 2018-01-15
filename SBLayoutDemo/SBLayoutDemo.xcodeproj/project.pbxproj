@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69BD6F4B200C391B009E96BB /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BD6F4A200C391B009E96BB /* MainTableViewController.swift */; };
+		69BD6F4D200C394B009E96BB /* AutoCellHieghtTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BD6F4C200C394B009E96BB /* AutoCellHieghtTableViewController.swift */; };
+		69BD6F4F200C49EE009E96BB /* AutoHeightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BD6F4E200C49EE009E96BB /* AutoHeightCell.swift */; };
+		69BD6F51200C4C81009E96BB /* AutoHeightCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BD6F50200C4C81009E96BB /* AutoHeightCellModel.swift */; };
 		69C0186420083F90005B2226 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C0186320083F90005B2226 /* AppDelegate.swift */; };
-		69C0186620083F90005B2226 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C0186520083F90005B2226 /* ViewController.swift */; };
+		69C0186620083F90005B2226 /* AnimateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C0186520083F90005B2226 /* AnimateViewController.swift */; };
 		69C0186920083F90005B2226 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69C0186720083F90005B2226 /* Main.storyboard */; };
 		69C0186B20083F90005B2226 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69C0186A20083F90005B2226 /* Assets.xcassets */; };
 		69C0186E20083F90005B2226 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69C0186C20083F90005B2226 /* LaunchScreen.storyboard */; };
@@ -16,9 +20,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		69BD6F4A200C391B009E96BB /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		69BD6F4C200C394B009E96BB /* AutoCellHieghtTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCellHieghtTableViewController.swift; sourceTree = "<group>"; };
+		69BD6F4E200C49EE009E96BB /* AutoHeightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoHeightCell.swift; sourceTree = "<group>"; };
+		69BD6F50200C4C81009E96BB /* AutoHeightCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoHeightCellModel.swift; sourceTree = "<group>"; };
 		69C0186020083F90005B2226 /* SBLayoutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SBLayoutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69C0186320083F90005B2226 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		69C0186520083F90005B2226 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		69C0186520083F90005B2226 /* AnimateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateViewController.swift; sourceTree = "<group>"; };
 		69C0186820083F90005B2226 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		69C0186A20083F90005B2226 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69C0186D20083F90005B2226 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,7 +70,11 @@
 			isa = PBXGroup;
 			children = (
 				69C0186320083F90005B2226 /* AppDelegate.swift */,
-				69C0186520083F90005B2226 /* ViewController.swift */,
+				69BD6F4A200C391B009E96BB /* MainTableViewController.swift */,
+				69C0186520083F90005B2226 /* AnimateViewController.swift */,
+				69BD6F4C200C394B009E96BB /* AutoCellHieghtTableViewController.swift */,
+				69BD6F4E200C49EE009E96BB /* AutoHeightCell.swift */,
+				69BD6F50200C4C81009E96BB /* AutoHeightCellModel.swift */,
 				69C0186720083F90005B2226 /* Main.storyboard */,
 				69C0186A20083F90005B2226 /* Assets.xcassets */,
 				69C0186C20083F90005B2226 /* LaunchScreen.storyboard */,
@@ -217,8 +229,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69C0186620083F90005B2226 /* ViewController.swift in Sources */,
+				69BD6F4B200C391B009E96BB /* MainTableViewController.swift in Sources */,
+				69C0186620083F90005B2226 /* AnimateViewController.swift in Sources */,
+				69BD6F4F200C49EE009E96BB /* AutoHeightCell.swift in Sources */,
 				69C0186420083F90005B2226 /* AppDelegate.swift in Sources */,
+				69BD6F4D200C394B009E96BB /* AutoCellHieghtTableViewController.swift in Sources */,
+				69BD6F51200C4C81009E96BB /* AutoHeightCellModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +375,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SBLayoutDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sb.SBLayoutDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -375,6 +392,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SBLayoutDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sb.SBLayoutDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

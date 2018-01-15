@@ -9,7 +9,7 @@
 import UIKit
 import SBLayout
 
-class ViewController: UIViewController {
+class AnimateViewController: UIViewController {
     //红色视图
     var redView: UIView = {
         let redView = UIView()
@@ -46,12 +46,14 @@ class ViewController: UIViewController {
         //self.redView.top(equalTo: self.view.sb_top, constant: 40).left(equalTo: self.view.sb_left, constant: 20).right(equalTo: self.view.sb_right, constant: -20).height(350).sb()
         //第二种改变高度（单独改变高度约束）:
         self.redView.height(350).sb()
+        
         UIView.animate(withDuration: 2, delay: 0, options: [.curveEaseInOut,.autoreverse,.repeat], animations: {
             self.view.layoutIfNeeded()
         }, completion: nil)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.edgesForExtendedLayout = UIRectEdge(rawValue: 0)
         setupUI()
     }
 
