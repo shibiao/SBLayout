@@ -9,7 +9,9 @@
 import Foundation
 
 struct AutoHeightCellModel {
+    //图片名
     var imageName: String
+    //文字
     var contentString: String
     init(imageName: String, contentString: String) {
         self.imageName = imageName
