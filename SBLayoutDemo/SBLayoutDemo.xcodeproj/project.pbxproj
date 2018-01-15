@@ -48,6 +48,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69BD6F52200C930A009E96BB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				69BD6F4A200C391B009E96BB /* MainTableViewController.swift */,
+				69C0186520083F90005B2226 /* AnimateViewController.swift */,
+				69BD6F4C200C394B009E96BB /* AutoCellHieghtTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		69BD6F53200C9316009E96BB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				69BD6F4E200C49EE009E96BB /* AutoHeightCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		69BD6F54200C931B009E96BB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				69BD6F50200C4C81009E96BB /* AutoHeightCellModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		69C0185720083F90005B2226 = {
 			isa = PBXGroup;
 			children = (
@@ -70,11 +96,9 @@
 			isa = PBXGroup;
 			children = (
 				69C0186320083F90005B2226 /* AppDelegate.swift */,
-				69BD6F4A200C391B009E96BB /* MainTableViewController.swift */,
-				69C0186520083F90005B2226 /* AnimateViewController.swift */,
-				69BD6F4C200C394B009E96BB /* AutoCellHieghtTableViewController.swift */,
-				69BD6F4E200C49EE009E96BB /* AutoHeightCell.swift */,
-				69BD6F50200C4C81009E96BB /* AutoHeightCellModel.swift */,
+				69BD6F52200C930A009E96BB /* ViewControllers */,
+				69BD6F53200C9316009E96BB /* Views */,
+				69BD6F54200C931B009E96BB /* Models */,
 				69C0186720083F90005B2226 /* Main.storyboard */,
 				69C0186A20083F90005B2226 /* Assets.xcassets */,
 				69C0186C20083F90005B2226 /* LaunchScreen.storyboard */,
