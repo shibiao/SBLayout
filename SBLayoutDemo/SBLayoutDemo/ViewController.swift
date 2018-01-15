@@ -10,21 +10,25 @@ import UIKit
 import SBLayout
 
 class ViewController: UIViewController {
+    //红色视图
     var redView: UIView = {
         let redView = UIView()
         redView.backgroundColor = .red
         return redView
     }()
+    //黄色视图
     var yellowView: UIView = {
         let yellowView = UIView()
         yellowView.backgroundColor = .yellow
         return yellowView
     }()
+    //蓝色视图
     var blueView: UIView = {
         let blueView = UIView()
         blueView.backgroundColor = .blue
         return blueView
     }()
+    //动起来按钮
     var button: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("动起来", for: .normal)
@@ -38,7 +42,10 @@ class ViewController: UIViewController {
         //重新约束前需解除之前的约束   解除约束激活
         NSLayoutConstraint.deactivate(self.redView.constraints)
         //重新约束
-        self.redView.top(equalTo: self.view.sb_top, constant: 40).left(equalTo: self.view.sb_left, constant: 20).right(equalTo: self.view.sb_right, constant: -20).height(350).sb()
+        //第一种改变高度（重写所有约束）:
+        //self.redView.top(equalTo: self.view.sb_top, constant: 40).left(equalTo: self.view.sb_left, constant: 20).right(equalTo: self.view.sb_right, constant: -20).height(350).sb()
+        //第二种改变高度（单独改变高度约束）:
+        self.redView.height(350).sb()
         UIView.animate(withDuration: 2, delay: 0, options: [.curveEaseInOut,.autoreverse,.repeat], animations: {
             self.view.layoutIfNeeded()
         }, completion: nil)
