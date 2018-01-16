@@ -8,6 +8,9 @@
 
 ### CocoaPods： 
 #### 导入项目中的方法：
+
+使用 CocoaPods: 请先安装cocoapods,如果版本太老无法找到,请升级cocopods到最新版本 命令：`pod repo update`
+
 第一步：Podfile中添加
 
 `pod 'SBLayout', '~>4.4'`
