@@ -42,6 +42,7 @@ class AutoHeightCell: UITableViewCell {
     }
 
     func setupUI() {
+        //控件需先一起添加到父视图，以避免不必要的错误
         contentView.addSubview(imgView)
         contentView.addSubview(contentLabel)
         //使用SBLayout对imgView进行约束

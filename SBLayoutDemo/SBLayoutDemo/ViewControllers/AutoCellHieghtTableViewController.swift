@@ -22,11 +22,11 @@ class AutoCellHieghtTableViewController: UITableViewController {
             "使用SBLayout你可以一行代码搞定无论多复杂的代码约束"
         )
         let model4 = AutoHeightCellModel(imageName: "avatar", contentString: """
-             CocoaPods：
-             导入项目中的方法：
-             第一步：Podfile中添加
-             pod 'SBLayout', '~>4.4'
-             并使用命令pod install完成导入
+         CocoaPods：
+         导入项目中的方法：
+         第一步：Podfile中添加
+         pod 'SBLayout', '~>4.4'
+         并使用命令pod install完成导入
          """
         )
         let model5 = AutoHeightCellModel(imageName: "avatar", contentString:
