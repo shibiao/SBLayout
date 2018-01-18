@@ -6,6 +6,7 @@
 
 ### [使用SBLayout你可以一行代码搞定无论多复杂的代码约束](https://www.jianshu.com/p/f62fd1c71d4e)
 
+## 第一种导入项目方法：
 ### CocoaPods： 
 #### 导入项目中的方法：
 
@@ -20,6 +21,8 @@
 第二步：
 
 `import SBLayout`
+
+## 第二种导入项目方法：
 
 #### 或者直接拖拽SBLayout.swift到项目中不需导入头文件即可使用。
 
