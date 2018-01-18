@@ -24,7 +24,8 @@
 
 ## 第二种导入项目方法：
 
-#### 直接拖拽SBLayout.swift到项目中不需导入头文件即可使用。
+#### iOS项目直接拖拽SBLayout文件夹下的SBLayout.swift到项目中不需导入头文件即可使用。
+#### macOS项目直接拖拽macOS文件夹下的SBLayout.swift到项目中不需导入头文件即可使用。
 
 ![2](https://github.com/shibiao/SBLayout/blob/master/Untitled.gif)
 ![1](https://github.com/shibiao/SBLayout/blob/master/QQ20171228-114204.png)
