@@ -24,7 +24,7 @@
 
 ## 第二种导入项目方法：
 
-#### 或者直接拖拽SBLayout.swift到项目中不需导入头文件即可使用。
+#### 直接拖拽SBLayout.swift到项目中不需导入头文件即可使用。
 
 ![2](https://github.com/shibiao/SBLayout/blob/master/Untitled.gif)
 ![1](https://github.com/shibiao/SBLayout/blob/master/QQ20171228-114204.png)
