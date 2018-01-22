@@ -9,7 +9,7 @@
 import UIKit
 
 class AutoCellHieghtTableViewController: UITableViewController {
-    
+    //数据源
     var data: [AutoHeightCellModel] = {
         var data = Array<AutoHeightCellModel>()
         let model1 = AutoHeightCellModel(imageName: "avatar", contentString:
@@ -31,20 +31,21 @@ class AutoCellHieghtTableViewController: UITableViewController {
         )
         let model5 = AutoHeightCellModel(imageName: "avatar", contentString:
          """
-             第二步：import SBLayout 或者直接拖拽SBLayout.swift到项目中不需导入头文件即可使用。
+         第二步：import SBLayout 或者直接拖拽SBLayout.swift到项目中不需导入头文件即可使用。
          """
         )
-        data.append(model1)
-        data.append(model2)
-        data.append(model3)
-        data.append(model4)
-        data.append(model5)
+        //添加5个model
+        _ = [model1,model2,model3,model4,model5].map{
+            data.append($0)
+        }
+
         return data
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
+        //估算tableView row 高度
         tableView.estimatedRowHeight = 120
-        
+        //注册自定义Cell
         tableView.register(AutoHeightCell.self, forCellReuseIdentifier: "AutoHeightCell")
     }
 
@@ -57,6 +58,7 @@ class AutoCellHieghtTableViewController: UITableViewController {
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "AutoHeightCell", for: indexPath) as! AutoHeightCell
 
         cell.model = data[indexPath.row]
