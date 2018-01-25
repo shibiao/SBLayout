@@ -1,5 +1,5 @@
 # SBLayout
-> ### AutoLayout for iOS by swift，support iOS9 and above
+> ### AutoLayout for iOS/macOS by swift，support iOS9/macOS10.11 and above
 
 > ### SBLayout是用Swift4所写的iOS版本轻量级AutoLayout单文件框架，总代码700多行，非常简单易用！
 > ##### 支持iOS9及其以上版本 & macOS10.11版本及其以上
@@ -22,7 +22,7 @@
 
 `import SBLayout`
 
-## 第二种导入项目方法：
+## 第二种导入项目方法（适用于iOS和macOS）：
 
 #### iOS项目直接拖拽SBLayout文件夹下的SBLayout.swift到项目中不需导入头文件即可使用。
 #### macOS项目直接拖拽macOS文件夹下的SBLayout.swift到项目中不需导入头文件即可使用。
