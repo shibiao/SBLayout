@@ -36,6 +36,28 @@ extension UIView {
     open var sb_firstBaseline: NSLayoutYAxisAnchor { get {return firstBaselineAnchor} }
     
     open var sb_lastBaseline: NSLayoutYAxisAnchor { get {return lastBaselineAnchor} }
+    
+      //SafeArea约束点属性
+    @available(iOS 11.0, *)
+    open var safe_width: NSLayoutDimension  { get {return safeAreaLayoutGuide.widthAnchor} }
+    @available(iOS 11.0, *)
+    open var safe_height: NSLayoutDimension  { get {return safeAreaLayoutGuide.heightAnchor} }
+    @available(iOS 11.0, *)
+    open var safe_top: NSLayoutYAxisAnchor { get {return safeAreaLayoutGuide.topAnchor} }
+    @available(iOS 11.0, *)
+    open var safe_bottom: NSLayoutYAxisAnchor { get {return safeAreaLayoutGuide.bottomAnchor} }
+    @available(iOS 11.0, *)
+    open var safe_right: NSLayoutXAxisAnchor { get {return safeAreaLayoutGuide.rightAnchor} }
+    @available(iOS 11.0, *)
+    open var safe_left: NSLayoutXAxisAnchor { get {return safeAreaLayoutGuide.leftAnchor} }
+    @available(iOS 11.0, *)
+    open var safe_centerX: NSLayoutXAxisAnchor { get {return safeAreaLayoutGuide.centerXAnchor} }
+    @available(iOS 11.0, *)
+    open var safe_centerY: NSLayoutYAxisAnchor { get {return safeAreaLayoutGuide.centerYAnchor} }
+    @available(iOS 11.0, *)
+    open var safe_leading: NSLayoutXAxisAnchor { get {return safeAreaLayoutGuide.leadingAnchor} }
+    @available(iOS 11.0, *)
+    open var safe_trailing: NSLayoutXAxisAnchor { get {return safeAreaLayoutGuide.trailingAnchor} }
     //MARK: **********************************************************************************************
     //MARK: ****************************************UIView************************************************
     //MARK: 赋值一个固定数值
