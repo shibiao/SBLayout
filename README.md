@@ -2,7 +2,7 @@
 > ### AutoLayout for iOS/macOS by swift，support iOS9/macOS10.11 and above
 
 > ### SBLayout是用Swift4所写的iOS版本轻量级AutoLayout单文件框架，总代码700多行，非常简单易用！
-> ##### 支持iOS9及其以上版本 & macOS10.11版本及其以上。支持iOS11+系统的SafeAreaLayout。
+> ##### 支持iOS9及其以上版本 & macOS10.11版本及其以上。支持iOS11+系统的SafeAreaLayout，完美支持iPhone X。
 
 ### [使用SBLayout你可以一行代码搞定无论多复杂的代码约束](https://www.jianshu.com/p/f62fd1c71d4e)
 
@@ -30,9 +30,4 @@ view.addSubview(blueView)
 //使用SBLayout约束
 blueView.top(equalTo: redView.sb_bottom, constant: 100).left(equalTo: view.sb_left).right(equalTo: view.sb_right).bottom(equalTo: view.sb_bottom, constant: -50).end()
 
-/*
-使用SafeArea 只需将sb改成safe,比如sb_bottom,改成safe_bottom，如下：
-@available(iOS 11.0, *)
-blueView.top(equalTo: redView.safe_bottom, constant: 100).left(equalTo: view.safe_left).right(equalTo: view.safe_right).bottom(equalTo: view.safe_bottom, constant: -50).end()
-*/
 ```
