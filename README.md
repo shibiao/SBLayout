@@ -29,7 +29,9 @@ blueView.backgroundColor = .blue
 view.addSubview(blueView)
 //使用SBLayout约束
 blueView.top(equalTo: redView.sb_bottom, constant: 100).left(equalTo: view.sb_left).right(equalTo: view.sb_right).bottom(equalTo: view.sb_bottom, constant: -50).end()
-/*使用SafeArea 只需将sb改成safe,比如sb_bottom,改成safe_bottom，如下：
+
+/*
+使用SafeArea 只需将sb改成safe,比如sb_bottom,改成safe_bottom，如下：
 blueView.top(equalTo: redView.safe_bottom, constant: 100).left(equalTo: view.safe_left).right(equalTo: view.safe_right).bottom(equalTo: view.safe_bottom, constant: -50).end()
 */
 ```
