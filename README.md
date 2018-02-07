@@ -32,6 +32,7 @@ blueView.top(equalTo: redView.sb_bottom, constant: 100).left(equalTo: view.sb_le
 
 /*
 使用SafeArea 只需将sb改成safe,比如sb_bottom,改成safe_bottom，如下：
+@available(iOS 11.0, *)
 blueView.top(equalTo: redView.safe_bottom, constant: 100).left(equalTo: view.safe_left).right(equalTo: view.safe_right).bottom(equalTo: view.safe_bottom, constant: -50).end()
 */
 ```
