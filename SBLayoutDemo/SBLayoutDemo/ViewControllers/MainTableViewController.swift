@@ -13,7 +13,15 @@ class MainTableViewController: UITableViewController {
         "AutoLayout动画",
         "cell的自动高度"
     ]
-
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        if #available(iOS 11.0, *) {
+        }else{
+            navigationController?.navigationBar.isTranslucent = false
+            automaticallyAdjustsScrollViewInsets = false
+        }
+        
+    }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return data.count
