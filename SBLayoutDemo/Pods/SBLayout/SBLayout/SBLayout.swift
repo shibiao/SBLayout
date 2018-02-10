@@ -61,20 +61,12 @@ extension UIView {
     //MARK: **********************************************************************************************
     //与一个视图上下左右重叠
     open func edges(with aView: UIView) -> UIView {
-        if #available(iOS 11.0, *) {
-            top(equalTo: aView.safe_top).left(equalTo: aView.safe_leading).right(equalTo: aView.safe_trailing).bottom(equalTo: aView.safe_bottom).end()
-        }else {
-            top(equalTo: aView.sb_top).left(equalTo: aView.sb_leading).right(equalTo: aView.sb_trailing).bottom(equalTo: aView.sb_bottom).end()
-        }
+        top(equalTo: aView.sb_top).left(equalTo: aView.sb_leading).right(equalTo: aView.sb_trailing).bottom(equalTo: aView.sb_bottom).end()
         return self
     }
     //与一个视图约束并带insets
     open func edges(with aView: UIView, and insets: UIEdgeInsets) -> UIView {
-        if #available(iOS 11.0, *) {
-            top(equalTo: aView.safe_top, constant: insets.top).trailing(equalTo: aView.safe_trailing, constant: -insets.right).leading(equalTo: aView.safe_leading, constant: insets.left).bottom(equalTo: aView.safe_bottom, constant: -insets.bottom).end()
-        }else {
-            top(equalTo: aView.sb_top, constant: insets.top).trailing(equalTo: aView.sb_trailing, constant: -insets.right).leading(equalTo: aView.sb_leading, constant: insets.left).bottom(equalTo: aView.sb_bottom, constant: -insets.bottom).end()
-        }
+        top(equalTo: aView.sb_top, constant: insets.top).trailing(equalTo: aView.sb_trailing, constant: -insets.right).leading(equalTo: aView.sb_leading, constant: insets.left).bottom(equalTo: aView.sb_bottom, constant: -insets.bottom).end()
         return self
     }
     //MARK: ****************************************UIView************************************************
