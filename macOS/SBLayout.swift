@@ -37,6 +37,17 @@ extension NSView {
     
     open var sb_lastBaseline: NSLayoutYAxisAnchor { get {return lastBaselineAnchor} }
     //MARK: **********************************************************************************************
+    //与一个视图上下左右重叠
+    open func edges(with aView: NSView) -> NSView {
+        top(equalTo: aView.sb_top).left(equalTo: aView.sb_leading).right(equalTo: aView.sb_trailing).bottom(equalTo: aView.sb_bottom).end()
+        return self
+    }
+    //与一个视图约束并带insets
+    open func edges(with aView: NSView, and insets: NSEdgeInsets) -> NSView {
+        top(equalTo: aView.sb_top, constant: insets.top).trailing(equalTo: aView.sb_trailing, constant: -insets.right).leading(equalTo: aView.sb_leading, constant: insets.left).bottom(equalTo: aView.sb_bottom, constant: -insets.bottom).end()
+        return self
+    }
+    //MARK: **********************************************************************************************
     //MARK: ****************************************NSView************************************************
     //MARK: 赋值一个固定数值
     open func width(_ width: CGFloat) -> NSView {
