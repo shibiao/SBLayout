@@ -12,33 +12,73 @@ extension UIView {
     //结束语句
     open func end() {}
     open func sb() {}
-        //约束点属性
-    open var sb_width: NSLayoutDimension  { get {if #available(iOS 11.0, *) {return safeAreaLayoutGuide.widthAnchor}else {return widthAnchor}} }
+    //约束点属性
+    @available(iOS 11.0, *)
+    open var safe_width: NSLayoutDimension  { get { return safeAreaLayoutGuide.widthAnchor }}
+    @available(iOS 11.0, *)
+    open var safe_height: NSLayoutDimension  { get {return safeAreaLayoutGuide.heightAnchor} }
+    @available(iOS 11.0, *)
+    open var safe_top: NSLayoutYAxisAnchor { get {return safeAreaLayoutGuide.topAnchor} }
+    @available(iOS 11.0, *)
+    open var safe_bottom: NSLayoutYAxisAnchor { get {return safeAreaLayoutGuide.bottomAnchor} }
+    @available(iOS 11.0, *)
+    open var safe_right: NSLayoutXAxisAnchor { get {return safeAreaLayoutGuide.rightAnchor}}
+    @available(iOS 11.0, *)
+    open var safe_left: NSLayoutXAxisAnchor { get {return safeAreaLayoutGuide.leftAnchor}}
+    @available(iOS 11.0, *)
+    open var safe_centerX: NSLayoutXAxisAnchor { get {return safeAreaLayoutGuide.centerXAnchor}}
+    @available(iOS 11.0, *)
+    open var safe_centerY: NSLayoutYAxisAnchor { get {return safeAreaLayoutGuide.centerYAnchor}}
+    @available(iOS 11.0, *)
+    open var safe_leading: NSLayoutXAxisAnchor { get {return safeAreaLayoutGuide.leadingAnchor}}
+    @available(iOS 11.0, *)
+    open var safe_trailing: NSLayoutXAxisAnchor { get {return safeAreaLayoutGuide.trailingAnchor}}
+    //MARK: **********************************************************************************************
+    open var sb_width: NSLayoutDimension  { get {return widthAnchor} }
     
-    open var sb_height: NSLayoutDimension  { get {if #available(iOS 11.0, *) {return safeAreaLayoutGuide.heightAnchor}else {return heightAnchor}} }
+    open var sb_height: NSLayoutDimension  { get {return heightAnchor} }
     
-    open var sb_top: NSLayoutYAxisAnchor { get {if #available(iOS 11.0, *) {return safeAreaLayoutGuide.topAnchor}else {return topAnchor}} }
+    open var sb_top: NSLayoutYAxisAnchor { get {return topAnchor} }
     
-    open var sb_bottom: NSLayoutYAxisAnchor { get {if #available(iOS 11.0, *) {return safeAreaLayoutGuide.bottomAnchor}else {return bottomAnchor}} }
+    open var sb_bottom: NSLayoutYAxisAnchor { get {return bottomAnchor} }
     
-    open var sb_right: NSLayoutXAxisAnchor { get {if #available(iOS 11.0, *) {return safeAreaLayoutGuide.rightAnchor}else {return rightAnchor}} }
+    open var sb_right: NSLayoutXAxisAnchor { get {return rightAnchor} }
     
-    open var sb_left: NSLayoutXAxisAnchor { get {if #available(iOS 11.0, *) {return safeAreaLayoutGuide.leftAnchor}else {return leftAnchor}} }
+    open var sb_left: NSLayoutXAxisAnchor { get {return leftAnchor} }
     
-    open var sb_centerX: NSLayoutXAxisAnchor { get {if #available(iOS 11.0, *) {return safeAreaLayoutGuide.centerXAnchor}else {return centerXAnchor}} }
+    open var sb_centerX: NSLayoutXAxisAnchor { get {return centerXAnchor} }
     
-    open var sb_centerY: NSLayoutYAxisAnchor { get {if #available(iOS 11.0, *) {return safeAreaLayoutGuide.centerYAnchor}else {return centerYAnchor}} }
+    open var sb_centerY: NSLayoutYAxisAnchor { get {return centerYAnchor} }
     
-    open var sb_leading: NSLayoutXAxisAnchor { get {if #available(iOS 11.0, *) {return safeAreaLayoutGuide.leadingAnchor}else {return leadingAnchor}} }
+    open var sb_leading: NSLayoutXAxisAnchor { get {return leadingAnchor} }
     
-    open var sb_trailing: NSLayoutXAxisAnchor { get {if #available(iOS 11.0, *) {return safeAreaLayoutGuide.trailingAnchor}else {return trailingAnchor}} }
+    open var sb_trailing: NSLayoutXAxisAnchor { get {return trailingAnchor} }
     
     open var sb_firstBaseline: NSLayoutYAxisAnchor { get {return firstBaselineAnchor} }
     
     open var sb_lastBaseline: NSLayoutYAxisAnchor { get {return lastBaselineAnchor} }
+    
     //MARK: **********************************************************************************************
+    //与一个视图上下左右重叠
+    open func edges(with aView: UIView) -> UIView {
+        if #available(iOS 11.0, *) {
+            top(equalTo: aView.safe_top).left(equalTo: aView.safe_leading).right(equalTo: aView.safe_trailing).bottom(equalTo: aView.safe_bottom).end()
+        }else {
+            top(equalTo: aView.sb_top).left(equalTo: aView.sb_leading).right(equalTo: aView.sb_trailing).bottom(equalTo: aView.sb_bottom).end()
+        }
+        return self
+    }
+    //与一个视图约束并带insets
+    open func edges(with aView: UIView, and insets: UIEdgeInsets) -> UIView {
+        if #available(iOS 11.0, *) {
+            top(equalTo: aView.safe_top, constant: insets.top).trailing(equalTo: aView.safe_trailing, constant: -insets.right).leading(equalTo: aView.safe_leading, constant: insets.left).bottom(equalTo: aView.safe_bottom, constant: -insets.bottom).end()
+        }else {
+            top(equalTo: aView.sb_top, constant: insets.top).trailing(equalTo: aView.sb_trailing, constant: -insets.right).leading(equalTo: aView.sb_leading, constant: insets.left).bottom(equalTo: aView.sb_bottom, constant: -insets.bottom).end()
+        }
+        return self
+    }
     //MARK: ****************************************UIView************************************************
-    //MARK: 赋值一个固定数值
+    //MARK: 赋值宽高一个固定数值
     open func width(_ width: CGFloat) -> UIView {
         translatesAutoresizingMaskIntoConstraints = false
         widthAnchor.constraint(equalToConstant: width).active()

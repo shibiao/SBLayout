@@ -30,8 +30,9 @@ class AnimateViewController: UIViewController {
     }()
     //动起来按钮
     var button: UIButton = {
-        let button = UIButton(type: .system)
+        let button = UIButton(type: .custom)
         button.setTitle("动起来", for: .normal)
+        button.setTitleColor(.red, for: .normal)
         button.layer.cornerRadius = 5.0
         button.layer.borderWidth = 1
         button.layer.borderColor = UIColor.black.cgColor
@@ -50,6 +51,7 @@ class AnimateViewController: UIViewController {
         UIView.animate(withDuration: 2, delay: 0, options: [.curveEaseInOut,.autoreverse,.repeat], animations: {
             self.view.layoutIfNeeded()
         }, completion: nil)
+        button.isEnabled = false
     }
     override func viewDidLoad() {
         super.viewDidLoad()

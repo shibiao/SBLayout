@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0431692D202E950500B5E69B /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0431692C202E950500B5E69B /* ThreeViewController.swift */; };
 		69BD6F4B200C391B009E96BB /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BD6F4A200C391B009E96BB /* MainTableViewController.swift */; };
 		69BD6F4D200C394B009E96BB /* AutoCellHieghtTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BD6F4C200C394B009E96BB /* AutoCellHieghtTableViewController.swift */; };
 		69BD6F4F200C49EE009E96BB /* AutoHeightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BD6F4E200C49EE009E96BB /* AutoHeightCell.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0431692C202E950500B5E69B /* ThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
 		69BD6F4A200C391B009E96BB /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		69BD6F4C200C394B009E96BB /* AutoCellHieghtTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCellHieghtTableViewController.swift; sourceTree = "<group>"; };
 		69BD6F4E200C49EE009E96BB /* AutoHeightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoHeightCell.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 				69BD6F4A200C391B009E96BB /* MainTableViewController.swift */,
 				69C0186520083F90005B2226 /* AnimateViewController.swift */,
 				69BD6F4C200C394B009E96BB /* AutoCellHieghtTableViewController.swift */,
+				0431692C202E950500B5E69B /* ThreeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0431692D202E950500B5E69B /* ThreeViewController.swift in Sources */,
 				69BD6F4B200C391B009E96BB /* MainTableViewController.swift in Sources */,
 				69C0186620083F90005B2226 /* AnimateViewController.swift in Sources */,
 				69BD6F4F200C49EE009E96BB /* AutoHeightCell.swift in Sources */,
@@ -397,7 +401,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = M54Y5FDG74;
 				INFOPLIST_FILE = SBLayoutDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -414,7 +418,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = M54Y5FDG74;
 				INFOPLIST_FILE = SBLayoutDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

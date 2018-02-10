@@ -28,10 +28,10 @@
             </objects>
             <point key="canvasLocation" x="139.19999999999999" y="133.13343328335833"/>
         </scene>
-        <!--Main Table View Controller-->
+        <!--SBLayout实例-->
         <scene sceneID="rg1-lh-gGG">
             <objects>
-                <tableViewController automaticallyAdjustsScrollViewInsets="NO" id="etI-Dv-CGC" customClass="MainTableViewController" customModule="SBLayoutDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController automaticallyAdjustsScrollViewInsets="NO" hidesBottomBarWhenPushed="YES" id="etI-Dv-CGC" customClass="MainTableViewController" customModule="SBLayoutDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="IT2-cg-33e">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -51,10 +51,11 @@
                             <outlet property="delegate" destination="etI-Dv-CGC" id="EUI-nh-Tcf"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="d5r-Lv-4Ve"/>
+                    <navigationItem key="navigationItem" title="SBLayout实例" id="d5r-Lv-4Ve"/>
                     <connections>
                         <segue destination="iEs-1q-U2r" kind="show" identifier="autoCellHeight" id="loi-f9-KYw"/>
                         <segue destination="Zx5-uN-XDC" kind="show" identifier="animate" id="iod-1u-jyA"/>
+                        <segue destination="tq8-4c-U6r" kind="show" identifier="three" id="oK9-u2-rcP"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6JD-M4-S8o" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -78,6 +79,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="My8-Ky-g7P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1598" y="-224"/>
+        </scene>
+        <!--Three View Controller-->
+        <scene sceneID="Ot7-dQ-lkP">
+            <objects>
+                <viewController id="tq8-4c-U6r" customClass="ThreeViewController" customModule="SBLayoutDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hal-XM-Nbb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="6uv-Fv-luS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mKf-8A-ms0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="817" y="895"/>
         </scene>
         <!--Animate View Controller-->
         <scene sceneID="J63-eD-iA1">

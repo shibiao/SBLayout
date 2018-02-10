@@ -11,16 +11,12 @@ import UIKit
 class MainTableViewController: UITableViewController {
     var data:[String] = [
         "AutoLayout动画",
-        "cell的自动高度"
+        "cell的自动高度",
+        "使用edges与视图轻松约束"
     ]
     override func viewDidLoad() {
         super.viewDidLoad()
-        if #available(iOS 11.0, *) {
-        }else{
-            navigationController?.navigationBar.isTranslucent = false
-            automaticallyAdjustsScrollViewInsets = false
-        }
-        
+        navigationController?.navigationBar.isTranslucent = false
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -37,8 +33,10 @@ class MainTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
             performSegue(withIdentifier: "animate", sender: nil)
-        }else {
+        }else if indexPath.row == 1 {
             performSegue(withIdentifier: "autoCellHeight", sender: nil)
+        }else {
+            performSegue(withIdentifier: "three", sender: nil)
         }
     }
 }
