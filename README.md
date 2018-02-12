@@ -33,25 +33,25 @@ CocoaPods：
 ### 使用方法简介：
 
 ##### 视图和父视图顶部约束，SBLayout只需如下操作：
-` exampleView.top(equalTo: fatherView.sb_top)`
+` exampleView.top(equalTo: aView.sb_top)`
 ##### 视图和父视图底部约束，SBLayout只需如下操作:
-`exampleView.bottom(equalTo: fatherView.sb_bottom)`
+`exampleView.bottom(equalTo: aView.sb_bottom)`
 ##### 视图和父视图左边约束，SBLayout只需如下操作:
-`exampleView.left(equalTo: view.sb_left)`
+`exampleView.left(equalTo: aView.sb_left)`
 或者
 `exampleView.leading(equalTo: view.sb_leading)`
 ##### 视图和父视图右边约束，SBLayout只需如下操作:
-`exampleView.right(equalTo: view.sb_right)`
+`exampleView.right(equalTo: aView.sb_right)`
 或者
-`exampleView.trailing(equalTo: view.sb_ trailing)`
+`exampleView.trailing(equalTo: aView.sb_ trailing)`
 ##### 视图宽高的赋值，SBLayout只需如下操作:
 `exampleView.width(constant)`
 
 `exampleView.height(constant)`
 ##### 视图和父视图X或者Y轴居中约束，SBLayout只需如下操作:
-`exampleView.centerX(equalTo: view.sb_centerX)`
+`exampleView.centerX(equalTo: aView.sb_centerX)`
 
-`exampleView.centerY(equalTo: view.sb_centerY)`
+`exampleView.centerY(equalTo: aView.sb_centerY)`
 
 因为SBLayout每个点约束后返回的是UIView，所以所有的约束点都可以继续在语句后面添加任意想添加的约束，如下：
 
