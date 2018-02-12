@@ -41,25 +41,27 @@ class AnimateViewController: UIViewController {
     }()
     @objc func handleButtonClick(_ button: UIButton) {
         //重新约束前需解除之前的约束   解除约束激活
-        NSLayoutConstraint.deactivate(self.redView.constraints)
+        NSLayoutConstraint.deactivate(redView.constraints)
         //重新约束
         //第一种改变高度（重写所有约束）:
         //self.redView.top(equalTo: self.view.sb_top, constant: 40).left(equalTo: self.view.sb_left, constant: 20).right(equalTo: self.view.sb_right, constant: -20).height(350).sb()
         //第二种改变高度（单独改变高度约束）:
-        self.redView.height(350).sb()
+        redView.height(350).sb()
         
         UIView.animate(withDuration: 2, delay: 0, options: [.curveEaseInOut,.autoreverse,.repeat], animations: {
             self.view.layoutIfNeeded()
         }, completion: nil)
+        
         button.isEnabled = false
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.edgesForExtendedLayout = UIRectEdge(rawValue: 0)
+        edgesForExtendedLayout = UIRectEdge(rawValue: 0)
         setupUI()
     }
 
     func setupUI() {
+        //先将视图都添加到到父视图上，然后再约束
         view.addSubview(redView)
         
         view.addSubview(blueView)
