@@ -25,7 +25,7 @@ class AutoCellHieghtTableViewController: UITableViewController {
          CocoaPods：
          导入项目中的方法：
          第一步：Podfile中添加
-         pod 'SBLayout', '~>4.4'
+         pod 'SBLayout', '~>4.5'
          并使用命令pod install完成导入
          """
         )
