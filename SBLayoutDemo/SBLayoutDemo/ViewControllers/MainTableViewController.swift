@@ -16,6 +16,7 @@ class MainTableViewController: UITableViewController {
     ]
     override func viewDidLoad() {
         super.viewDidLoad()
+        //此代码用于iOS11及其iOS10以下版本控制器界面适配
         navigationController?.navigationBar.isTranslucent = false
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
