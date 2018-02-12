@@ -30,7 +30,7 @@ class AnimateViewController: UIViewController {
     }()
     //动起来按钮
     var button: UIButton = {
-        let button = UIButton(type: .custom)
+        let button = UIButton(type: .system)
         button.setTitle("动起来", for: .normal)
         button.setTitleColor(.red, for: .normal)
         button.layer.cornerRadius = 5.0

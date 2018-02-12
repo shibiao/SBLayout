@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1D8DD15708ECD304B2846059F3856194 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
-		2F80A3F4EA06F0FA7C9CEA10A335E918 /* SBLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA33F18A3625A5938856CBD02CA2756D /* SBLayout-dummy.m */; };
-		32704A1B2C27D2505FB91BE22E5354B9 /* SBLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC6EEBF89EA3E74BE7575F005658148 /* SBLayout.swift */; };
+		258F3AC03AF9DF62A23F7D99321EB1BD /* SBLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09336DC5CB2262A988E2C877621EDE12 /* SBLayout.swift */; };
+		2F80A3F4EA06F0FA7C9CEA10A335E918 /* SBLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 968AEBFD8D712DD3A4A561B3052E2273 /* SBLayout-dummy.m */; };
 		7944B9EBA0DB75A62BDC9FAC74A356DB /* Pods-SBLayoutDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 485BA09E091210E4D7966FB9F1CE7C02 /* Pods-SBLayoutDemo-dummy.m */; };
 		8583AA3F4CD529DFA9BBD42B2D80C537 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		8E47FB5F9F2A94BA0B489B93381F6B54 /* SBLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9190E765141980DDFAD1F84916BB157A /* SBLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E47FB5F9F2A94BA0B489B93381F6B54 /* SBLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A8364E2B93E0C7A6E6934535C683A03 /* SBLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		97D4FF6BA581DB701DEE5ECFEB9E8261 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		FFB6890D561C843BCE11DF92DDBB382E /* Pods-SBLayoutDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F704C9ADB9F0C1A1B8410CBBA4CD303 /* Pods-SBLayoutDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -28,28 +28,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		429B3F342957E0C375283844CA864B60 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09336DC5CB2262A988E2C877621EDE12 /* SBLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SBLayout.swift; path = iOS/SBLayout.swift; sourceTree = "<group>"; };
+		1CC8BA52FA7058DCA8E8734DFC97565C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A8364E2B93E0C7A6E6934535C683A03 /* SBLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SBLayout-umbrella.h"; sourceTree = "<group>"; };
+		30319CF49CCF3CD9FF5785F205D00AF6 /* SBLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SBLayout-prefix.pch"; sourceTree = "<group>"; };
 		42C92552048DA7B341BE9F93C06AF643 /* Pods-SBLayoutDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SBLayoutDemo.modulemap"; sourceTree = "<group>"; };
 		4727C5BAE54A925B4161F36DD2C5DD4A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		485BA09E091210E4D7966FB9F1CE7C02 /* Pods-SBLayoutDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SBLayoutDemo-dummy.m"; sourceTree = "<group>"; };
-		4DC6EEBF89EA3E74BE7575F005658148 /* SBLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SBLayout.swift; path = SBLayout/SBLayout.swift; sourceTree = "<group>"; };
 		54103F737C7D4FB1C48D8B3AAC88C261 /* Pods-SBLayoutDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SBLayoutDemo-frameworks.sh"; sourceTree = "<group>"; };
 		5DFFAA737F2EA57B139DD6B280735548 /* SBLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SBLayout.framework; path = SBLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F704C9ADB9F0C1A1B8410CBBA4CD303 /* Pods-SBLayoutDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SBLayoutDemo-umbrella.h"; sourceTree = "<group>"; };
+		6FA3651C6E2A1282D049C6E671A39045 /* SBLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SBLayout.modulemap; sourceTree = "<group>"; };
 		76FA27A2D503E9692A0FF939B9CDCE69 /* Pods-SBLayoutDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SBLayoutDemo-resources.sh"; sourceTree = "<group>"; };
 		856C54A4EECE02A995BCC14DB2EA1723 /* Pods-SBLayoutDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SBLayoutDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		9190E765141980DDFAD1F84916BB157A /* SBLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SBLayout-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9BC641BAAC803369F477409A8C591418 /* SBLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SBLayout.modulemap; sourceTree = "<group>"; };
+		968AEBFD8D712DD3A4A561B3052E2273 /* SBLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SBLayout-dummy.m"; sourceTree = "<group>"; };
 		ADB8E473A83C1BBDD3859ADF3B2A8674 /* Pods_SBLayoutDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SBLayoutDemo.framework; path = "Pods-SBLayoutDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4A621509A6D96D53D4CEE6C9D660C5B /* SBLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SBLayout.xcconfig; sourceTree = "<group>"; };
 		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		B6F92F20DC8455EA79A189293B7C7205 /* Pods-SBLayoutDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SBLayoutDemo.release.xcconfig"; sourceTree = "<group>"; };
-		BA33F18A3625A5938856CBD02CA2756D /* SBLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SBLayout-dummy.m"; sourceTree = "<group>"; };
 		C5232D2A370CC4063E0E304DE5239783 /* Pods-SBLayoutDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SBLayoutDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D63C128582288A98E3D68B7FFC733768 /* SBLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SBLayout-prefix.pch"; sourceTree = "<group>"; };
 		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DC40E6D4C8111BB68B6881514B25F8D9 /* Pods-SBLayoutDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SBLayoutDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		E9BF5668E141909F4F45378E8C8F4E8D /* SBLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SBLayout.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +73,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13F9D15889BD5E04479370B4B79E4C8D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1CC8BA52FA7058DCA8E8734DFC97565C /* Info.plist */,
+				6FA3651C6E2A1282D049C6E671A39045 /* SBLayout.modulemap */,
+				B4A621509A6D96D53D4CEE6C9D660C5B /* SBLayout.xcconfig */,
+				968AEBFD8D712DD3A4A561B3052E2273 /* SBLayout-dummy.m */,
+				30319CF49CCF3CD9FF5785F205D00AF6 /* SBLayout-prefix.pch */,
+				2A8364E2B93E0C7A6E6934535C683A03 /* SBLayout-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SBLayout";
+			sourceTree = "<group>";
+		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,7 +107,7 @@
 		51B2C7D4F6C99BD523708F4C3B5F773C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				59217C428CB326D9D0DE0E035B4481F8 /* SBLayout */,
+				71E43B4A6B2182564A2BF6593BF93864 /* SBLayout */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -106,11 +120,11 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		59217C428CB326D9D0DE0E035B4481F8 /* SBLayout */ = {
+		71E43B4A6B2182564A2BF6593BF93864 /* SBLayout */ = {
 			isa = PBXGroup;
 			children = (
-				4DC6EEBF89EA3E74BE7575F005658148 /* SBLayout.swift */,
-				BF332FBB5848F3D535626353B8D47032 /* Support Files */,
+				09336DC5CB2262A988E2C877621EDE12 /* SBLayout.swift */,
+				13F9D15889BD5E04479370B4B79E4C8D /* Support Files */,
 			);
 			name = SBLayout;
 			path = SBLayout;
@@ -143,20 +157,6 @@
 			);
 			name = "Pods-SBLayoutDemo";
 			path = "Target Support Files/Pods-SBLayoutDemo";
-			sourceTree = "<group>";
-		};
-		BF332FBB5848F3D535626353B8D47032 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				429B3F342957E0C375283844CA864B60 /* Info.plist */,
-				9BC641BAAC803369F477409A8C591418 /* SBLayout.modulemap */,
-				E9BF5668E141909F4F45378E8C8F4E8D /* SBLayout.xcconfig */,
-				BA33F18A3625A5938856CBD02CA2756D /* SBLayout-dummy.m */,
-				D63C128582288A98E3D68B7FFC733768 /* SBLayout-prefix.pch */,
-				9190E765141980DDFAD1F84916BB157A /* SBLayout-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SBLayout";
 			sourceTree = "<group>";
 		};
 		F2F5A2519EC9C64C7E1F5C686FFFEFC1 /* Products */ = {
@@ -258,7 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F80A3F4EA06F0FA7C9CEA10A335E918 /* SBLayout-dummy.m in Sources */,
-				32704A1B2C27D2505FB91BE22E5354B9 /* SBLayout.swift in Sources */,
+				258F3AC03AF9DF62A23F7D99321EB1BD /* SBLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,7 +373,7 @@
 		};
 		8825BD7D0CA39B7556571D6978650B10 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9BF5668E141909F4F45378E8C8F4E8D /* SBLayout.xcconfig */;
+			baseConfigurationReference = B4A621509A6D96D53D4CEE6C9D660C5B /* SBLayout.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -499,7 +499,7 @@
 		};
 		FCDF8E81F30681895BE7FCB7D40546EE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9BF5668E141909F4F45378E8C8F4E8D /* SBLayout.xcconfig */;
+			baseConfigurationReference = B4A621509A6D96D53D4CEE6C9D660C5B /* SBLayout.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
