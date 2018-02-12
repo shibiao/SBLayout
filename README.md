@@ -62,6 +62,13 @@ CocoaPods：
 
 ### SBLayout约束结束后需在最后添加.end()或者.sb()以结束约束
 
+#### 使用SafeAutoLayout完美适配iOS11系统
+
+##### 与窗口控制器视图约束使用SBLayout可以这样写：
+
+`exampleView.top(equalTo: view.safe_top).left(equalTo: view.safe_left).right(equalTo: view.safe_right).bottom(equalTo: view.safe_bottom).end()`
+
+也就是将sb_*前缀改成safe_*前缀。safe_*前缀主要是用与适配在iOS11系统上于视图控制器self.view的约束。非视图控制器的视图的self.view用sb_*更好。
 ***
 
 ![2](https://github.com/shibiao/SBLayout/blob/master/Untitled.gif)
