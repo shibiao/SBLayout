@@ -54,11 +54,13 @@ CocoaPods：
 因为SBLayout每个点约束后返回的是UIView，所以所有的约束点都可以继续在语句后面添加任意想添加的约束，如下：
 
 `exampleView.top(equalTo: view.sb_top).left(equalTo: view.sb_left).right(equalTo: view.sb_right).bottom(equalTo: view.sb_bottom).end()`
+
 也可以这样：
 `exampleView.edges(with: view).end()`
 
-##### SBLayout约束结束后需在最后添加.end()或者.sb()以结束约束
+### SBLayout约束结束后需在最后添加.end()或者.sb()以结束约束
 
+***
 
 ![2](https://github.com/shibiao/SBLayout/blob/master/Untitled.gif)
 ![1](https://github.com/shibiao/SBLayout/blob/master/QQ20171228-114204.png)
