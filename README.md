@@ -30,6 +30,8 @@ CocoaPods：
 
 ***
 
+### 使用方法简介：
+
 ##### 视图和父视图顶部约束，SBLayout只需如下操作：
 ` exampleView.top(equalTo: fatherView.sb_top)`
 ##### 视图和父视图底部约束，SBLayout只需如下操作:
