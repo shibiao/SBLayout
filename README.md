@@ -69,7 +69,9 @@ CocoaPods：
 也就是将sb_*前缀改成safe_*前缀。safe_*前缀主要是用与适配在iOS11系统上与视图控制器self.view的约束。非视图控制器视图的self.view用sb_*更好。
 ***
 
-![2](https://github.com/shibiao/SBLayout/blob/master/Untitled.gif)
+![1](https://github.com/shibiao/SBLayout/blob/master/Feb-17-2018%2011-56-35.gif)
+
+![2](https://github.com/shibiao/SBLayout/blob/master/Feb-17-2018%2011-57-35.gif)
 
 ![3](https://github.com/shibiao/SBLayout/blob/master/Feb-17-2018%2011-52-26.gif)
 
