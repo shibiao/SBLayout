@@ -18,6 +18,7 @@ class MainTableViewController: UITableViewController {
         super.viewDidLoad()
         //此代码用于iOS11及其iOS10以下版本控制器界面适配
         navigationController?.navigationBar.isTranslucent = false
+        
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -33,11 +34,16 @@ class MainTableViewController: UITableViewController {
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
-            performSegue(withIdentifier: "animate", sender: nil)
+            performSegue(withIdentifier: "animate", sender: data[indexPath.row])
         }else if indexPath.row == 1 {
-            performSegue(withIdentifier: "autoCellHeight", sender: nil)
+            performSegue(withIdentifier: "autoCellHeight", sender: data[indexPath.row])
         }else {
-            performSegue(withIdentifier: "three", sender: nil)
+            performSegue(withIdentifier: "three", sender: data[indexPath.row])
         }
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination
+        guard let title = sender as? String else {return}
+        vc.title = title
     }
 }

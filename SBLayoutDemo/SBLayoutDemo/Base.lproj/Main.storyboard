@@ -28,7 +28,7 @@
             </objects>
             <point key="canvasLocation" x="139.19999999999999" y="133.13343328335833"/>
         </scene>
-        <!--SBLayout实例-->
+        <!--实例-->
         <scene sceneID="rg1-lh-gGG">
             <objects>
                 <tableViewController automaticallyAdjustsScrollViewInsets="NO" hidesBottomBarWhenPushed="YES" id="etI-Dv-CGC" customClass="MainTableViewController" customModule="SBLayoutDemo" customModuleProvider="target" sceneMemberID="viewController">
@@ -51,7 +51,7 @@
                             <outlet property="delegate" destination="etI-Dv-CGC" id="EUI-nh-Tcf"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="SBLayout实例" id="d5r-Lv-4Ve"/>
+                    <navigationItem key="navigationItem" title="实例" id="d5r-Lv-4Ve"/>
                     <connections>
                         <segue destination="iEs-1q-U2r" kind="show" identifier="autoCellHeight" id="loi-f9-KYw"/>
                         <segue destination="Zx5-uN-XDC" kind="show" identifier="animate" id="iod-1u-jyA"/>

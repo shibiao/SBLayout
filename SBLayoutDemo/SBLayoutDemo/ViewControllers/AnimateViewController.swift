@@ -59,7 +59,6 @@ class AnimateViewController: UIViewController {
         edgesForExtendedLayout = UIRectEdge(rawValue: 0)
         setupUI()
     }
-
     func setupUI() {
         //先将视图都添加到到父视图上，然后再约束
         view.addSubview(redView)
