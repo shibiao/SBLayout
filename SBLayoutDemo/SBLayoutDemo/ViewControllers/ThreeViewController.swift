@@ -35,7 +35,7 @@ class ThreeViewController: UIViewController {
         NSLayoutConstraint.deactivate(redView.constraints)
         
         yellowView.edges(with: redView, and: UIEdgeInsetsMake(80, 80, 80, 80)).end()
-        UIView.animate(withDuration: 1, delay: 0, options: [.autoreverse,.repeat], animations: {
+        UIView.animate(withDuration: 1, delay: 0, options: [.curveEaseInOut,.autoreverse,.repeat], animations: {
             self.view.layoutIfNeeded()
         }, completion: nil)
     }
