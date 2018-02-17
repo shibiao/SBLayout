@@ -24,16 +24,25 @@ class ThreeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(redView)
-        view.addSubview(yellowView)
+        redView.addSubview(yellowView)
         
         redView.edges(with: view, and: UIEdgeInsetsMake(20, 20, 20, 20)).end()
         yellowView.edges(with: redView, and: UIEdgeInsetsMake(20, 20, 20, 20)).end()
-        
     }
-
+    @IBAction func handleTap(_ sender: UITapGestureRecognizer) {
+        //解除之前所有约束，启动动画时必需步骤
+        NSLayoutConstraint.deactivate(yellowView.constraints)
+        NSLayoutConstraint.deactivate(redView.constraints)
+        
+        yellowView.edges(with: redView, and: UIEdgeInsetsMake(80, 80, 80, 80)).end()
+        UIView.animate(withDuration: 1, delay: 0, options: [.autoreverse,.repeat], animations: {
+            self.view.layoutIfNeeded()
+        }, completion: nil)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
     
 
