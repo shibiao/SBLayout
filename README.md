@@ -70,6 +70,9 @@ CocoaPods：
 ***
 
 ![2](https://github.com/shibiao/SBLayout/blob/master/Untitled.gif)
+
+![3](https://github.com/shibiao/SBLayout/blob/master/Feb-17-2018%2011-52-26.gif)
+
 ![1](https://github.com/shibiao/SBLayout/blob/master/QQ20171228-114204.png)
 
 #### 实例：
