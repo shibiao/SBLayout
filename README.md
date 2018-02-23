@@ -2,7 +2,7 @@
 > ### AutoLayout for iOS/macOS by swift，support iOS9/macOS10.11 and above
 
 > ### SBLayout是用Swift4所写的iOS/macOS版本新一代轻量级非常强大的AutoLayout单文件框架，总代码700多行，非常简单易用！
-> ##### 支持iOS9及其以上版本 & macOS10.11版本及其以上。支持iOS11+系统的SafeAreaLayout，完美支持iPhone X。
+> ##### 支持iOS9/macOS10.11版本及其以上。支持iOS11+系统的SafeAreaLayout，完美支持iPhone X。
 
 ### [使用SBLayout你可以一行代码搞定无论多复杂的代码约束](https://www.jianshu.com/p/f62fd1c71d4e)
 ## 导入项目方法一（适用于iOS）：
